@@ -43,40 +43,40 @@ let myFavMovies = [
 console.log(myFavMovies)
 
 console.log(myFavMovies.length)
- 
-let firstMovieTitle = myFavMovies.title[0]
-let secondMovieYear = myFavMovies.year[1]
-let thirdMovieRating = myFavMovies.rating[2]
-let fourthMovieDescription = myFavMovies.description[3]
 
+console.log(myFavMovies[0].title)
+console.log(myFavMovies[1].year)
+console.log(myFavMovies{2}.rating)
+console.log(myFavMovies[3].description)
+ 
 let textForFirstMovieTitle = "The title of the first movie is: "
 let textForSecondMovieYear = "The release year of the second movie is: "
 let textForThirdMovieRating = "The IMDB rating of the third movie is: "
 let textForFourthMovieDescription = "The short description of the fourth movie is: "
 
-console.log(textForFirstMovieTitle + firstMovieTitle)
-console.log(textForSecondMovieYear + secondMovieYear)
-console.log(textForThirdMovieRating + thirdMovieRating)
-console.log(textForFourthMovieDescription + fourthMovieDescription)
+console.log(textForFirstMovieTitle + myFavMovies[0].title)
+console.log(textForSecondMovieYear + myFavMovies[1].year)
+console.log(textForThirdMovieRating + myFavMovies{2}.rating)
+console.log(textForFourthMovieDescription + myFavMovies[3].description)
 
-let firstMovieLeadDirector = myFavMovies.directors[0]
-let secondMovieLeadWriter = myFavMovies.writers[1].length[0]
-let thirdMovieLeadStar = myFavMovies.stars[2].lenght[0]
-let fourthMovieMainGenre = myFavMovies.genres[3].length[0]
+console.log(myFavMovies[0].directors)
+console.log(myFavMovies[1].writers[0].length)
+console.log(myFavMovies[2].stars[0].length)
+console.log(myFavMovies[3].genres[0].length)
 
-let textForFirstMovieDirector = "The lead director of the first movie is: "
-let textForSecondMovieWriter = "The lead writer of the second movie is: "
-let textForThirdMovieStar = "The lead star of the third movie is: "
-let textForFourthMovieMainGenre = "The main genre of the fourth movie is: " 
+let firstDirector = "The lead director of the first movie is: "
+let secondWriter = "The lead writer of the second movie is: "
+let thirdStar = "The lead star of the third movie is: "
+let fourthGenre = "The main genre of the fourth movie is: " 
 
-console.log(textForFirstMovieDirector + firstMovieLeadDirector)
-console.log(textForSecondMovieWriter + secondMovieLeadWriter)
-console.log(textForThirdMovieStar + thirdMovieLeadStar)
-console.log(textForFourthMovieMainGenre + fourthMovieMainGenre)
+console.log(firstDirector + myFavMovies[0].directors)
+console.log(secondWriter + myFavMovies[1].writers[0].length)
+console.log(thirdStar + myFavMovies[2].stars[0].length)
+console.log(fourthGenre + myFavMovies[3].genres[0].length)
 
 // Average Rating
 
-let sumAvarage = myFavMovies.rating[0] + myFavMovies.rating[1] + myFavMovies.rating[2] + myFavMovies.rating[3]
+let sumAvarage = myFavMovies[0].rating + myFavMovies[1].rating + myFavMovies[2].rating + myFavMovies[3].rating
 let averageRating = sumAverage / myFavMovies.rating.lenght
 
 console.log(averageRating)
@@ -84,15 +84,12 @@ console.log(averageRating)
 //Average Age
 
 let thisYear = 2023
-let ageFirstMovie = thisYear - myFavMovies.year[0]
-let ageSecondMovie = thisYear - myFavMovies.year[1]
-let ageThirdMovie = thisYear - myFavMovies.year[2]
-let ageFourthMovie = thisYear - myFavMovies.year[3]
+let ageFirstMovie = thisYear - myFavMovies[0].year
+let ageSecondMovie = thisYear - myFavMovies[1].year
+let ageThirdMovie = thisYear - myFavMovies[2].year
+let ageFourthMovie = thisYear - myFavMovies[3].year
 
-let sumAge = ageFourthMovie + ageSecondMovie + ageThirdMovie + ageFourthMovie
-let averageAge = sumAge / myFavMovies.year.length
 
-console.log(averageAge)
 
 
 
