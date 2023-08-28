@@ -12,7 +12,7 @@ const techBrands = [
 //for(brand of techBrands) not working for me
 //console.log(brands)
 
-cosnt person = {
+const person = {
     name: "Adam",
     surname: "Bucan"
 };
