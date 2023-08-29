@@ -46,7 +46,7 @@ console.log(myFavMovies.length)
 
 console.log(myFavMovies[0].title)
 console.log(myFavMovies[1].year)
-console.log(myFavMovies{2}.rating)
+console.log(myFavMovies[2].rating)
 console.log(myFavMovies[3].description)
  
 let textForFirstMovieTitle = "The title of the first movie is: "
@@ -56,13 +56,13 @@ let textForFourthMovieDescription = "The short description of the fourth movie i
 
 console.log(textForFirstMovieTitle + myFavMovies[0].title)
 console.log(textForSecondMovieYear + myFavMovies[1].year)
-console.log(textForThirdMovieRating + myFavMovies{2}.rating)
+console.log(textForThirdMovieRating + myFavMovies[2].rating)
 console.log(textForFourthMovieDescription + myFavMovies[3].description)
 
 console.log(myFavMovies[0].directors)
-console.log(myFavMovies[1].writers[0].length)
-console.log(myFavMovies[2].stars[0].length)
-console.log(myFavMovies[3].genres[0].length)
+console.log(myFavMovies[1].writers[0])
+console.log(myFavMovies[2].stars[0])
+console.log(myFavMovies[3].genres[0])
 
 let firstDirector = "The lead director of the first movie is: "
 let secondWriter = "The lead writer of the second movie is: "
@@ -70,14 +70,14 @@ let thirdStar = "The lead star of the third movie is: "
 let fourthGenre = "The main genre of the fourth movie is: " 
 
 console.log(firstDirector + myFavMovies[0].directors)
-console.log(secondWriter + myFavMovies[1].writers[0].length)
-console.log(thirdStar + myFavMovies[2].stars[0].length)
-console.log(fourthGenre + myFavMovies[3].genres[0].length)
+console.log(secondWriter + myFavMovies[1].writers[0])
+console.log(thirdStar + myFavMovies[2].stars[0])
+console.log(fourthGenre + myFavMovies[3].genres[0])
 
 // Average Rating
 
-let sumAvarage = myFavMovies[0].rating + myFavMovies[1].rating + myFavMovies[2].rating + myFavMovies[3].rating
-let averageRating = sumAverage / myFavMovies.rating.lenght
+let sumAverage = myFavMovies[0].rating + myFavMovies[1].rating + myFavMovies[2].rating + myFavMovies[3].rating
+let averageRating = sumAverage / myFavMovies.length
 
 console.log(averageRating)
 
@@ -88,6 +88,11 @@ let ageFirstMovie = thisYear - myFavMovies[0].year
 let ageSecondMovie = thisYear - myFavMovies[1].year
 let ageThirdMovie = thisYear - myFavMovies[2].year
 let ageFourthMovie = thisYear - myFavMovies[3].year
+
+let sumAge = ageFirstMovie + ageSecondMovie + ageThirdMovie + ageFourthMovie
+let averageAge = sumAge / myFavMovies.length
+
+console.log(averageAge)
 
 
 
